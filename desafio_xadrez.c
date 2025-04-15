@@ -30,5 +30,28 @@ int main() {
         k++;
     } while (k <= 8);
 
+    printf("\n");
+
+    // Movimento do Cavalo: duas casas para baixo e uma para a esquerda
+    // Usamos dois loops aninhados: for e while
+    printf("Movimento do Cavalo (2 casas para baixo e 1 para a esquerda):\n");
+
+    const int casas_baixo = 2;
+    const int casas_esquerda = 1;
+
+    // Loop externo: movimenta duas casas para baixo
+    for (int i = 0; i < casas_baixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // Loop interno: movimenta uma casa para a esquerda
+    int l = 0;
+    while (l < casas_esquerda) {
+        printf("Esquerda\n");
+        l++;
+    }
+
+
+
     return 0;
 }
